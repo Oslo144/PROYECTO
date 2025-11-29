@@ -1,11 +1,11 @@
-/* Fondo general */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #F0F4F8;
 }
 
-/* Header */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -55,12 +55,12 @@ header {
     cursor: pointer;
 }
 
-/* Layout */
+
 .container {
     display: flex;
 }
 
-/* Sidebar */
+
 .sidebar {
     width: 200px;
     background: #1E293B;
@@ -86,13 +86,13 @@ header {
     background: #2563EB;
 }
 
-/* Main */
+
 .main {
     flex: 1;
     padding: 20px;
 }
 
-/* Banner */
+
 .banner img {
     width: 100%;
     border-radius: 12px;
@@ -101,14 +101,14 @@ header {
     height: 150px;
 }
 
-/* Products grid */
+
 .products {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
 }
 
-/* Product card */
+
 .product-card {
     background: #FFFFFF;
     border: 2px solid #CBD5E1;
@@ -148,7 +148,7 @@ header {
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     padding: 20px;
