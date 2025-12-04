@@ -9,74 +9,88 @@
 <body>
 
 <header>
-    <div class="logo">MYOUTFEET</div>
-    <div class="search-bar">
-        <input type="text" placeholder="Buscar productos...">
-        <button></button>
-    </div>
-    <div class="user-menu">
+    <h1 class="logo">MYOUTFEET</h1>
+
+    <section class="search-bar">
+        <input type="search" placeholder="Buscar productos...">
+        <button aria-label="Buscar"></button>
+    </section>
+
+    <section class="user-menu">
         <span>Hola, Usuario</span>
-        <button></button>
-    </div>
+        <button aria-label="Usuario"></button>
+    </section>
 </header>
 
-<div class="container">
-    <aside class="sidebar">
-        <div class="sidebar-item"> Hombre</div>
-        <div class="sidebar-item"> Mujer</div>
-        <div class="sidebar-item"> Niños</div>
-        <div class="sidebar-item"> Ofertas</div>
-        <div class="sidebar-item"> Accesorios</div>
+<div class="layout">
+    <aside>
+        <nav>
+            <ul class="menu-categorias">
+                <li><a href="#">Hombre</a></li>
+                <li><a href="#">Mujer</a></li>
+                <li><a href="#">Niños</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Accesorios</a></li>
+            </ul>
+        </nav>
     </aside>
 
-    <main class="main">
-        <div class="banner">
-            <img src="https://www.shutterstock.com/image-vector/promo-banner-announcing-total-sale-260nw-2164542333.jpg" alt="Banner Promocional">
-        </div>
-        
-        <div class="products">
-            <div class="product-card">
-                <img src="https://i.etsystatic.com/13611332/r/il/18ca4b/6301539682/il_fullxfull.6301539682_5147.jpg" alt="Producto 1">
+    <main>
+        <section class="banner">
+            <img src="https://www.shutterstock.com/image-vector/promo-banner-announcing-total-sale-260nw-2164542333.jpg" 
+                 alt="Banner Promocional">
+        </section>
+
+        <section class="products">
+
+            <article class="product-card">
+                <img src="https://i.etsystatic.com/13611332/r/il/18ca4b/6301539682/il_fullxfull.6301539682_5147.jpg" alt="Camisa Azul">
                 <h3>Camisa Azul</h3>
                 <p>$25.99</p>
                 <button>Agregar al carrito</button>
-            </div>
-            <div class="product-card">
-                <img src="https://yazbek.com.mx/cdn/shop/files/C0652-pantalon-gabardina-caballero-65poliester-35algodon-negro_1.jpg?v=1734457405" alt="Producto 2">
+            </article>
+
+            <article class="product-card">
+                <img src="https://yazbek.com.mx/cdn/shop/files/C0652-pantalon-gabardina-caballero-65poliester-35algodon-negro_1.jpg?v=1734457405" alt="Pantalón Negro">
                 <h3>Pantalón Negro</h3>
                 <p>$35.99</p>
                 <button>Agregar al carrito</button>
-            </div>
-            <div class="product-card">
-                <img src="https://www.aki.com.ec/catalogo-familia-2021/wp-content/uploads/2021/05/7861192931434.jpg" alt="Producto 3">
+            </article>
+
+            <article class="product-card">
+                <img src="https://www.aki.com.ec/catalogo-familia-2021/wp-content/uploads/2021/05/7861192931434.jpg" alt="Zapatos Casual">
                 <h3>Zapatos Casual</h3>
                 <p>$45.50</p>
                 <button>Agregar al carrito</button>
-            </div>
-            <div class="product-card">
-                <img src="https://primary.jwwb.nl/public/z/b/b/temp-zjcrzlqxmkmqzqrsxooa/u2jsgi/0242.jpg?enable-io=true&enable=upscale&fit=bounds&width=1200" alt="Producto 4">
+            </article>
+
+            <article class="product-card">
+                <img src="https://primary.jwwb.nl/public/z/b/b/temp-zjcrzlqxmkmqzqrsxooa/u2jsgi/0242.jpg" alt="Vestido Rojo">
                 <h3>Vestido Rojo</h3>
                 <p>$55.00</p>
                 <button>Agregar al carrito</button>
-            </div>
-            <div class="product-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl6rgEm-8ucRZgifz0E_hX53JGCbQwFTFySg&s" alt="Producto 5">
+            </article>
+
+            <article class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl6rgEm-8ucRZgifz0E_hX53JGCbQwFTFySg&s" alt="Chaqueta Jeans">
                 <h3>Chaqueta Jeans</h3>
                 <p>$40.99</p>
                 <button>Agregar al carrito</button>
-            </div>
-            <div class="product-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv4Ht94ga20I6IY1C-ziiPWApMV7M5EHQ9bQ&s" alt="Producto 6">
+            </article>
+
+            <article class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv4Ht94ga20I6IY1C-ziiPWApMV7M5EHQ9bQ&s" alt="Gorra Negra">
                 <h3>Gorra Negra</h3>
                 <p>$15.00</p>
                 <button>Agregar al carrito</button>
-            </div>
-        </div>
+            </article>
+
+        </section>
     </main>
 </div>
 
 <footer>
-    <p>© 2025 MYOUTFEET | Contacto: info@MYOUTFEETe.com | Síguenos en redes sociales</p>
+    <p>© 2025 MYOUTFEET | Contacto: info@MYOUTFEET.com | Síguenos en redes sociales</p>
 </footer>
 
 </body>
