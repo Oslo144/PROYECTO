@@ -1,97 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Ropa Moderna</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MYOUTFEET</title>
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
 <header>
-    <h1 class="logo">MYOUTFEET</h1>
+ 
+    <div class="logo">MYOUTFEET</div>
 
-    <section class="search-bar">
-        <input type="search" placeholder="Buscar productos...">
-        <button aria-label="Buscar"></button>
-    </section>
+   
+    <div class="header-search">
+        <input type="text" id="searchInput" placeholder="Buscar productos..." />
+    </div>
 
-    <section class="user-menu">
-        <span>Hola, Usuario</span>
-        <button aria-label="Usuario"></button>
-    </section>
+
+    <div class="header-right">
+        <div class="welcome">Bienvenido, Usuario</div>
+        <button id="loginBtn">Iniciar sesión</button>
+    </div>
 </header>
 
-<div class="layout">
-    <aside>
-        <nav>
-            <ul class="menu-categorias">
-                <li><a href="#">Hombre</a></li>
-                <li><a href="#">Mujer</a></li>
-                <li><a href="#">Niños</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Accesorios</a></li>
-            </ul>
-        </nav>
-    </aside>
 
-    <main>
-        <section class="banner">
-            <img src="https://www.shutterstock.com/image-vector/promo-banner-announcing-total-sale-260nw-2164542333.jpg" 
-                 alt="Banner Promocional">
-        </section>
+<div class="hamburger" id="hamburger">☰</div>
+<nav id="mobileMenu" class="mobile-menu" aria-hidden="true">
+    <a href="#">Todos</a>
+    <a href="#">Mujer</a>
+    <a href="#">Hombre</a>
+</nav>
 
-        <section class="products">
 
-            <article class="product-card">
-                <img src="https://i.etsystatic.com/13611332/r/il/18ca4b/6301539682/il_fullxfull.6301539682_5147.jpg" alt="Camisa Azul">
-                <h3>Camisa Azul</h3>
-                <p>$25.99</p>
-                <button>Agregar al carrito</button>
-            </article>
+<section class="hero">
+    <img src="https://www.latiendadecarolina.com/cdn/shop/files/banner_web_bases_c1a5732f-1ce3-4e9d-a17a-7dfc2f468422_1944x.jpg?v=1762870229" 
+         alt="Banner Principal" class="hero-image" />
+</section>
 
-            <article class="product-card">
-                <img src="https://yazbek.com.mx/cdn/shop/files/C0652-pantalon-gabardina-caballero-65poliester-35algodon-negro_1.jpg?v=1734457405" alt="Pantalón Negro">
-                <h3>Pantalón Negro</h3>
-                <p>$35.99</p>
-                <button>Agregar al carrito</button>
-            </article>
 
-            <article class="product-card">
-                <img src="https://www.aki.com.ec/catalogo-familia-2021/wp-content/uploads/2021/05/7861192931434.jpg" alt="Zapatos Casual">
-                <h3>Zapatos Casual</h3>
-                <p>$45.50</p>
-                <button>Agregar al carrito</button>
-            </article>
+<section class="products-section">
+  <h2>Ropa de Mujer</h2>
+  <div class="product-grid">
 
-            <article class="product-card">
-                <img src="https://primary.jwwb.nl/public/z/b/b/temp-zjcrzlqxmkmqzqrsxooa/u2jsgi/0242.jpg" alt="Vestido Rojo">
-                <h3>Vestido Rojo</h3>
-                <p>$55.00</p>
-                <button>Agregar al carrito</button>
-            </article>
+    <div class="product-item">
+      <img src="https://ivonne.com/cdn/shop/files/10106447multicolor_1.jpg?v=1752190730&width=2048" />
+      <h4>Vestido Floral</h4><p>$49.99</p>
+    </div>
 
-            <article class="product-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl6rgEm-8ucRZgifz0E_hX53JGCbQwFTFySg&s" alt="Chaqueta Jeans">
-                <h3>Chaqueta Jeans</h3>
-                <p>$40.99</p>
-                <button>Agregar al carrito</button>
-            </article>
+    <div class="product-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8IucIVIO3Fv3N6w3EM9FJat5UhHsQrk4yNg&s" />
+      <h4>Blusa Elegante</h4><p>$29.99</p>
+    </div>
 
-            <article class="product-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv4Ht94ga20I6IY1C-ziiPWApMV7M5EHQ9bQ&s" alt="Gorra Negra">
-                <h3>Gorra Negra</h3>
-                <p>$15.00</p>
-                <button>Agregar al carrito</button>
-            </article>
+    <div class="product-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJaz8DSkQsubNC8XSI8hp2Hh4EUTWBG7hXAQ&s" />
+      <h4>Falda Midi</h4><p>$39.99</p>
+    </div>
 
-        </section>
-    </main>
-</div>
+    <div class="product-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe1RyUkTOrLY0tg-iJERQnEfVyCbDkJmgyvg&s" />
+      <h4>Pantalón Casual</h4><p>$34.99</p>
+    </div>
+
+    <div class="product-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1fb6ftt3Kc44vh__BYgJnfO6_f_k5hROq9g&s" />
+      <h4>Chaqueta Jeans</h4><p>$59.99</p>
+    </div>
+
+    <div class="product-item">
+      <img src="https://www.modarm.com/medias/000005000000810327-1200x1200-0.jpg?context=bWFzdGVyfGltYWdlc3wyOTE2Nzl8aW1hZ2UvanBlZ3xhR0k1TDJobVpTODRPVEV3T0RnNU5qUT" />
+      <h4>Blusa negra</h4><p>$24.99</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="products-section">
+  <h2>Ropa de Hombre</h2>
+  <div class="product-grid">
+
+    <div class="product-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Xx8KCDtyvswsz-MA5r7bNdEI5-JaL3GuHw&s" />
+      <h4>Camiseta Casual</h4><p>$29.99</p>
+    </div>
+
+    <div class="product-item">
+      <img src="https://www.gap.cl/media/wysiwyg/straight_hombre.jpg" />
+      <h4>Jeans Slim</h4><p>$49.99</p>
+    </div>
+
+    <div class="product-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVX9ldMGZDX-hOo5emQRwgjwgDbA2psHFGbw&s" />
+      <h4>Camisa Formal</h4><p>$39.99</p>
+    </div>
+
+    <div class="product-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlpE77DkkicW9eEa7nVB1dzpDbTDsEaCm_nw&s" />
+      <h4>Chaqueta de Cuero</h4><p>$99.99</p>
+    </div>
+
+    <div class="product-item">
+      <img src="https://i.pinimg.com/474x/a0/a6/a1/a0a6a11b4b76d91c2586b371b5d6cbe8.jpg" />
+      <h4>Pantalón Chino</h4><p>$44.99</p>
+    </div>
+
+    <div class="product-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIsEW8HaO-DVdJ9F4njiVVe96IIFuS0VmcQ&s" />
+      <h4>Sudadera Hoodie</h4><p>$34.99</p>
+    </div>
+
+  </div>
+</section>
 
 <footer>
-    <p>© 2025 MYOUTFEET | Contacto: info@MYOUTFEET.com | Síguenos en redes sociales</p>
+    <p>&copy; 2025 MYOUTFEET. Todos los derechos reservados.</p>
+    <p>
+        <a href="#">Política de Privacidad</a> | 
+        <a href="#">Términos de Servicio</a> | 
+        <a href="#">Contacto</a>
+    </p>
 </footer>
 
+
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="username">Usuario:</label>
+      <input type="text" id="username" required>
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" required>
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
