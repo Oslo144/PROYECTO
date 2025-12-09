@@ -40,27 +40,6 @@ hamburger.addEventListener("click", () => {
         mobileMenu.style.display = "flex";
     }
 });
-const searchInput = document.getElementById("searchInput");
-const products = document.querySelectorAll(".product-item");
-
-searchInput.addEventListener("input", () => {
-    const text = searchInput.value.toLowerCase();
-
-    products.forEach(product => {
-        const name = product.querySelector("h4").textContent.toLowerCase();
-
-        if (name.includes(text)) {
-            product.style.display = "block";
-        } else {
-            product.style.display = "none";
-        }
-    });
-});
-
-
-// ==========================
-// ANIMACIÓN EN PRODUCTOS
-// ==========================
 products.forEach(product => {
     product.addEventListener("mouseover", () => {
         product.style.transform = "scale(1.05)";
