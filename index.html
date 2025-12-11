@@ -9,36 +9,32 @@
 <body>
 
 <header>
- 
     <div class="logo">MYOUTFEET</div>
 
-   
     <div class="header-search">
         <input type="text" id="searchInput" placeholder="Buscar productos..." />
     </div>
 
-
     <div class="header-right">
         <div class="welcome">Bienvenido, Usuario</div>
+        <button id="cartBtn">🛒 Carrito (<span id="cartCount">0</span>)</button>
         <button id="loginBtn">Iniciar sesión</button>
     </div>
 </header>
 
+<div class="hamburger-container">
+    <div class="hamburger" id="hamburger">☰</div>
 
-<div class="hamburger" id="hamburger">☰</div>
-<nav id="mobileMenu" class="mobile-menu" aria-hidden="true">
-    <a href="#">Todos</a>
-    <a href="trabajo3.html">Mujer</a>
-    <a href="trabajo2.html">Hombre</a>
-
-</nav>
-
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="trabajo3.html">Mujer</a>
+        <a href="trabajo2.html">Hombre</a>
+    </div>
+</div>
 
 <section class="hero">
     <img src="https://www.latiendadecarolina.com/cdn/shop/files/banner_web_bases_c1a5732f-1ce3-4e9d-a17a-7dfc2f468422_1944x.jpg?v=1762870229" 
          alt="Banner Principal" class="hero-image" />
 </section>
-
 
 <section class="products-section">
   <h2>Ropa de Mujer</h2>
@@ -47,36 +43,41 @@
     <div class="product-item">
       <img src="https://ivonne.com/cdn/shop/files/10106447multicolor_1.jpg?v=1752190730&width=2048" />
       <h4>Vestido Floral</h4><p>$49.99</p>
+      <button class="buy-btn">Comprar</button>
     </div>
 
     <div class="product-item">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8IucIVIO3Fv3N6w3EM9FJat5UhHsQrk4yNg&s" />
       <h4>Blusa Elegante</h4><p>$29.99</p>
+      <button class="buy-btn">Comprar</button>
     </div>
 
     <div class="product-item">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJaz8DSkQsubNC8XSI8hp2Hh4EUTWBG7hXAQ&s" />
       <h4>Falda Midi</h4><p>$39.99</p>
+      <button class="buy-btn">Comprar</button>
     </div>
 
     <div class="product-item">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe1RyUkTOrLY0tg-iJERQnEfVyCbDkJmgyvg&s" />
       <h4>Pantalón Casual</h4><p>$34.99</p>
+      <button class="buy-btn">Comprar</button>
     </div>
 
     <div class="product-item">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1fb6ftt3Kc44vh__BYgJnfO6_f_k5hROq9g&s" />
       <h4>Chaqueta Jeans</h4><p>$59.99</p>
+      <button class="buy-btn">Comprar</button>
     </div>
 
     <div class="product-item">
-      <img src="https://navissi.com/products/blusa-negra-basgit sica?srsltid=AfmBOoqCi2R7W34016gEUrXoMnu5ih6jeVZUgGMoe30XX0VggzXvxMRN" />
+      <img src="https://mirto.com/cdn/shop/files/04717_0050_1.jpg?v=1734354861" />
       <h4>Blusa negra</h4><p>$24.99</p>
+      <button class="buy-btn">Comprar</button>
     </div>
 
   </div>
 </section>
-
 
 <section class="products-section">
   <h2>Ropa de Hombre</h2>
@@ -85,31 +86,37 @@
     <div class="product-item">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Xx8KCDtyvswsz-MA5r7bNdEI5-JaL3GuHw&s" />
       <h4>Camiseta Casual</h4><p>$29.99</p>
+      <button class="buy-btn">Comprar</button>
     </div>
 
     <div class="product-item">
       <img src="https://www.gap.cl/media/wysiwyg/straight_hombre.jpg" />
       <h4>Jeans Slim</h4><p>$49.99</p>
+      <button class="buy-btn">Comprar</button>
     </div>
 
     <div class="product-item">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVX9ldMGZDX-hOo5emQRwgjwgDbA2psHFGbw&s" />
       <h4>Camisa Formal</h4><p>$39.99</p>
+      <button class="buy-btn">Comprar</button>
     </div>
 
     <div class="product-item">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlpE77DkkicW9eEa7nVB1dzpDbTDsEaCm_nw&s" />
       <h4>Chaqueta de Cuero</h4><p>$99.99</p>
+      <button class="buy-btn">Comprar</button>
     </div>
 
     <div class="product-item">
       <img src="https://i.pinimg.com/474x/a0/a6/a1/a0a6a11b4b76d91c2586b371b5d6cbe8.jpg" />
       <h4>Pantalón Chino</h4><p>$44.99</p>
+      <button class="buy-btn">Comprar</button>
     </div>
 
     <div class="product-item">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIsEW8HaO-DVdJ9F4njiVVe96IIFuS0VmcQ&s" />
       <h4>Sudadera Hoodie</h4><p>$34.99</p>
+      <button class="buy-btn">Comprar</button>
     </div>
 
   </div>
@@ -124,7 +131,6 @@
     </p>
 </footer>
 
-
 <div id="loginModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
@@ -138,6 +144,11 @@
     </form>
   </div>
 </div>
+
+<script src="app.js"></script>
+</body>
+</html>
+
 
 <script src="app.js"></script>
 </body>
